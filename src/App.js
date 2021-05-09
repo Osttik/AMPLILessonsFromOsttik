@@ -1,23 +1,55 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import Header from './components/header/Header';
+import ToDoList from './components/toDoList/ToDoList';
 import './App.css';
 
 function App() {
+  const [toDoList, changeList] = useState([
+    {
+      name: "To do",
+      cards: [
+        {
+          text: "Do home work"
+        },
+        {
+          text: "Do house work"
+        }
+      ]
+    }, 
+    {
+      name: "In progress",
+      cards: [
+        {
+          text: "Learn React"
+        }
+      ]
+    }, 
+    {
+      name: "Done",
+      cards: [
+        {
+          text: "Breath"
+        },
+        {
+          text: "Live"
+        }
+      ]
+    }
+  ]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="content">
+        {
+          toDoList.map(item => (
+            <ToDoList 
+              name={item.name}
+              cards={item.cards}
+            />
+          ))
+        }
+      </div>
     </div>
   );
 }
