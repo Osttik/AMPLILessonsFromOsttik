@@ -1,0 +1,36 @@
+.toDoListCard {
+    width: inherit;
+    min-height: 24px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 1px 0 rgba(9,30,66,.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardText {
+    padding: 0 5px 0 5px;
+}
+
+.cardButton {
+    padding: 0;
+    border: none;
+    background-color: inherit;
+}
+
+.cardButton:hover {
+    padding: 0;
+    border: none;
+    background-color: inherit;
+}
+
+.cardArrowIcon {
+    height: 21px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
