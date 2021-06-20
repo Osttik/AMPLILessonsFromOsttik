@@ -1,8 +1,14 @@
-.header {
-    height: 50px;
-    border-bottom: 1px solid black;
-    margin-bottom: 10px;
+.chatHeader {
+    height: 30px;
+    padding: 5px;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid;
+}
+
+.chatText {
+    font-weight: bold;
+    font-size: 20px;
 }

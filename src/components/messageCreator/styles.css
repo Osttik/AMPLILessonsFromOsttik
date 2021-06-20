@@ -1,0 +1,15 @@
+.messageArea {
+    resize: none;
+    width: 100%;
+}
+
+.messageCreator {
+    display: flex;
+
+}
+
+.nickWithButtonForm {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
